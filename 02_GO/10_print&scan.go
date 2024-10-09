@@ -18,6 +18,11 @@ func sum() {
 
 func main() {
 	var x string = ""
+	var stockcode = 940
+	var enddate = "2021-12-31"
+	var url = "Code = %d & endDate= %s"
+	fmt.Printf(url, stockcode, enddate)
+	fmt.Print("\n")
 	fmt.Print("Enter your name: ")
 	fmt.Scan(&x)
 	fmt.Println(len(x))
