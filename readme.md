@@ -5,4 +5,3 @@
 - Python
 - Golang
 - HTML
-- CSS
