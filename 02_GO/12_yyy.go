@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	a := 1
-	c := a << 1
-	ptr := &c
-	fmt.Println(*ptr)
-	fmt.Println(c)
+	for i := 0; i <= 10; i++ {
+		if i%2 == 0 {
+			continue
+		}
+		fmt.Println(i)
+	}
 }

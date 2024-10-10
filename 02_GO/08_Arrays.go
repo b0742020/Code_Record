@@ -32,7 +32,7 @@ func main() {
 	fmt.Println("2D :", twoD)
 
 	twoD = [2][3]int{
-		{0, 1, 2}, {0, 1, 2},
+		{0, 1, 2}, {2, 3, 4},
 	}
 	fmt.Println("2D :", twoD)
 }
