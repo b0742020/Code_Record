@@ -144,11 +144,23 @@ func main() {
 	// 	fmt.Println("")
 	// }
 
-	var row = 9
-	for i := 1; i <= row; i++ {
-		for j := 1; j <= i; j++ {
-			fmt.Printf("%v*%v=%v \t", i, j, i*j)
-		}
-		fmt.Println("")
-	}
+	//99乘法表
+	// var row = 9
+	// for i := 1; i <= row; i++ {
+	// 	for j := 1; j <= i; j++ {
+	// 		fmt.Printf("%v*%v=%v \t", i, j, i*j)
+	// 	}
+	// 	fmt.Println("")
+	// }
+
+	// for range loop
+	// var str = "Hello Golang"
+	// for k, v := range str {
+	// 	fmt.Printf("Index : %v & Value : %c\n", k, v)
+	// }
+
+	// var arr = []string{"apple", "banana", "orange"}
+	// for k, v := range arr {
+	// 	fmt.Printf("Index : %v & Value : %v\n", k, v)
+	// }
 }
