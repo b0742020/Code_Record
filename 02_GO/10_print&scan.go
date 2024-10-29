@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 )
 
 func sayHello(x string) {
@@ -15,6 +14,10 @@ func sum() {
 		result += i
 	}
 	fmt.Println(result)
+}
+func test() bool {
+	fmt.Println("Test......")
+	return true
 }
 
 func main() {
@@ -42,11 +45,30 @@ func main() {
 	// 	fmt.Printf("Value : %v Type : %T\n", str, str)
 	// 	num, _ := strconv.ParseInt(str, 10, 64)
 	// 	fmt.Printf("Value : %v Type : %T\n", num, num)
+	//////////////////////////////////////////////////////
 	/*String convert to float
 	 */
+	// str := "123456.33333333"
+	// num, err := strconv.ParseFloat(str, 64)
+	// fmt.Printf("Value : %v Type : %T Value : %v\n", num, num, err)
 	//////////////////////////////////////////////////////
-	str := "123456.33333333"
-	num, err := strconv.ParseFloat(str, 64)
-	fmt.Printf("Value : %v Type : %T Value : %v\n", num, num, err)
+	/*取餘數*/
+	// fmt.Println(10 % -3)
+	// fmt.Println(-10 % 3)
+	//////////////////////////////////////////////////////
+	/*邏輯與(前面是Flase後面就不會執行)邏輯或(前面是True後面就不會執行)短路*/
+	// var a int = 20
+	// if a > 10 && test() {
+	// 	fmt.Println("Execute.....")
+	// }
+
+	// if a > 30 && test() {
+	// 	fmt.Println("Execute.....")
+	// }
+
+	// if a > 30 || test() {
+	// 	fmt.Println("Execute.....")
+	// }
+	//////////////////////////////////////////////////////
 
 }
