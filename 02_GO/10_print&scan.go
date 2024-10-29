@@ -17,15 +17,19 @@ func sum() {
 }
 
 func main() {
-	var x string = ""
-	var stockcode = 940
-	var enddate = "2021-12-31"
-	var url = "Code = %d & endDate= %s"
-	fmt.Printf(url, stockcode, enddate)
-	fmt.Print("\n")
-	fmt.Print("Enter your name: ")
-	fmt.Scan(&x)
-	fmt.Println(len(x))
-	sayHello(x)
-	sum()
+	// var x string = ""
+	// var stockcode = 940
+	// var enddate = "2021-12-31"
+	// var url = "Code = %d & endDate= %s"
+	// fmt.Printf(url, stockcode, enddate)
+	// fmt.Print("\n")
+	// fmt.Print("Enter your name: ")
+	// fmt.Scan(&x)
+	// fmt.Println(len(x))
+	// sayHello(x)
+	// sum()
+	// var a float32 = 3.222222
+	// var b int32 = 4
+	// fmt.Println(a + float32(b))
+
 }
