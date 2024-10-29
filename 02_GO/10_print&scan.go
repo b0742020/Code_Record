@@ -70,5 +70,18 @@ func main() {
 	// 	fmt.Println("Execute.....")
 	// }
 	//////////////////////////////////////////////////////
+	/*值對換*/
+	// 1st way
+	// var a int = 10
+	// var b int = 20
+	// t := a
+	// a = b
+	// b = t
+	//  fmt.Println(a, b)
+	//2nd way
+	// var a int = 10
+	// var b int = 20
+	// a, b = b, a
+	// fmt.Println(a, b)
 
 }
