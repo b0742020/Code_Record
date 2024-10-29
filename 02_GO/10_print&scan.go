@@ -83,5 +83,72 @@ func main() {
 	// var b int = 20
 	// a, b = b, a
 	// fmt.Println(a, b)
+	//////////////////////////////////////////////////////
+	/*比大小*/
+	// var a = 34
+	// var b = 23
+	// var max int
+	// if a > b {
+	// 	max = a
 
+	// } else {
+	// 	max = b
+	// }
+	// fmt.Printf("Max value is : %v", max)
+	//////////////////////////////////////////////////////
+	/*For Loop*/
+	// for i := 1 ; i <= 10; i++ {
+	// 	fmt.Println(i)
+	// }
+
+	// sum := 0
+	// for i := 1; i <= 100; i++ {
+	// 	sum += i
+	// }
+	// fmt.Println(sum)
+
+	// var sum int
+	// var count int
+	// for i := 1; i <= 100; i++ {
+	// 	if i%9 == 0 {
+	// 		sum += i
+	// 		count++
+	// 		fmt.Println(i)
+	// 	}
+	// }
+	// fmt.Println(sum)
+	// fmt.Println(count)
+
+	/*雙重for loop flow
+	1. i=0 print 6 顆星星
+	2. i=1 print 6 顆星星
+	3. i=2 print 6 顆星星
+	4. i=3 print 6 顆星星
+	5. i=4 print 6 顆星星
+	6. i=5 print 6 顆星星
+	*/
+	// var row = 5
+	// var col = 6
+	// for i := 0; i < row; i++ {
+	// 	for j := 0; j < col; j++ {
+	// 		fmt.Print("*")
+	// 	}
+	// 	fmt.Println("")
+	// }
+
+	// var row = 5
+	// for i := 1; i <= row; i++ {
+	// 	for j := 1; j < i; j++ {
+	// 		fmt.Print("*")
+	// 	}
+	// 	fmt.Println("")
+	// }
+
+	var row = 9
+	for i := 1; i <= row; i++ {
+		for j := 1; j <= i; j++ {
+			fmt.Printf("%v*%v=%v \t", i, j, i*j)
+		}
+		fmt.Println("")
+	}
 }
