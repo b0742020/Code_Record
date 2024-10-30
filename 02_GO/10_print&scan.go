@@ -156,11 +156,12 @@ func main() {
 	// for range loop
 	// var str = "Hello Golang"
 	// for k, v := range str {
-	// 	fmt.Printf("Index : %v & Value : %c\n", k, v)
+	// 	fmt.Printf("Index : %v \t Value : %c\n", k, v)
 	// }
 
 	// var arr = []string{"apple", "banana", "orange"}
 	// for k, v := range arr {
-	// 	fmt.Printf("Index : %v & Value : %v\n", k, v)
+	// 	fmt.Printf("Index : %v \t Value : %v\n", k, v)
 	// }
+
 }
