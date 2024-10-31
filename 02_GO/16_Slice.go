@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	// 	var arr = [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	// 	for k, v := range arr {
@@ -67,7 +65,7 @@ func main() {
 	// fmt.Println(slice_B)
 
 	//5.透過append() 刪除元素
-	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	a = append(a[:3], a[4:]...)
-	fmt.Println(a)
+	// a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	// a = append(a[:3], a[4:]...)
+	// fmt.Println(a)
 }
