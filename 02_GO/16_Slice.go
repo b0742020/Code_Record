@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// 	var arr = [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 	// 	for k, v := range arr {
@@ -33,4 +35,39 @@ func main() {
 	// c := s[:3]
 	// fmt.Printf("長度 : %v 容量 : %v\n", len(c), cap(c))
 
+	/*make() create a Slice make([]Type, len, cap)*/
+
+	//1. 在Slice 新增DATA 用append()
+	// var slice_A []int
+	// fmt.Printf("len : %v , cap : %v\n", len(slice_A), cap(slice_A))
+	// slice_A = append(slice_A, 22, 33, 55, 77, 88, 11)
+	// var slice_B []int
+	// slice_B = append(slice_B, 100, 23, 55, 88, 99)
+	// fmt.Printf("%v %v %v \n", slice_B, len(slice_B), cap(slice_B))
+
+	//2. 在append()合併Slice
+	// slice_A = append(slice_A, slice_B...)
+	// fmt.Println(slice_A)
+
+	//3. Slice的擴容策略
+	// var slice_C []int
+	// for i := 1; i <= 10; i++ {
+	// 	slice_C = append(slice_C, i)
+	// 	fmt.Printf("%v %v %v \n", slice_C, len(slice_C), cap(slice_C))
+	// }
+
+	//4.copy() 複製Slice
+	// slice_A := []int{1, 2, 3, 5}
+	// slice_B := make([]int, 4, 4)
+	// copy(slice_B, slice_A)
+	// fmt.Println(slice_A)
+	// fmt.Println(slice_B)
+	// slice_B[0] = 111
+	// fmt.Println(slice_A)
+	// fmt.Println(slice_B)
+
+	//5.透過append() 刪除元素
+	a := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	a = append(a[:3], a[4:]...)
+	fmt.Println(a)
 }
