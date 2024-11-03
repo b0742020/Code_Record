@@ -3,7 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// var userinfo = make([]map[string]string, 3, 3)
+
+	/*
+		我們想要在Slice中存放一系列用戶訊息，這時候我們可以用map類型的切片來存放用戶訊息。
+	*/
+	// var userinfo = make([]map[string]string, 4)
 	// fmt.Println(userinfo)
 	// if userinfo[0] == nil {
 	// 	userinfo[0] = make(map[string]string)
@@ -26,25 +30,35 @@ func main() {
 	// 	userinfo[2]["gender"] = "female"
 	// }
 
+	// if userinfo[3] == nil {
+	// 	userinfo[3] = make(map[string]string)
+	// 	userinfo[3]["username"] = "Jone"
+	// 	userinfo[3]["age"] = "24"
+	// 	userinfo[3]["gender"] = "female"
+	// }
+
+	// for _, v := range userinfo {
+	// 	fmt.Println(v)
+	// }
+
 	// for _, v := range userinfo {
 	// 	for key, value := range v {
 	// 		fmt.Printf("key : %v value : %v\n", key, value)
 	// 	}
 	// }
 
-	// var userinfo1 = make(map[string][]string)
-	// userinfo1["username"] = []string{"John", "Gibson", "Jane"}
-	// userinfo1["age"] = []string{"22", "23", "23"}
-	// userinfo1["gender"] = []string{"male", "male", "female"}
+	var userinfo1 = make(map[string][]string)
+	userinfo1["username"] = []string{"John", "Gibson", "Jane"}
+	userinfo1["age"] = []string{"22", "23", "23"}
+	userinfo1["gender"] = []string{"male", "male", "female"}
 
-	// fmt.Println(userinfo1)
-	// for _, v := range userinfo1 {
-	// 	for _, v := range v {
-	// 		fmt.Println(v)
-	// 	}
-	// }
-
-	//Map and Slice both of them are call b reference type
+	fmt.Println(userinfo1)
+	for _, v := range userinfo1 {
+		for _, v := range v {
+			fmt.Println(v)
+		}
+	}
+	//Map and Slice both of them are called by reference type
 	var userinfo2 = make(map[string]string)
 	userinfo2["username"] = "John"
 	userinfo2["age"] = "22"
@@ -53,6 +67,4 @@ func main() {
 	fmt.Println(userinfo2)
 	fmt.Println(userinfo3)
 
-
-	23 重看
 }
