@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+	"strings"
+)
 
 func main() {
 
@@ -58,7 +62,13 @@ func main() {
 			fmt.Println(v)
 		}
 	}
+
 	//Map and Slice both of them are called by reference type
+	/*
+		值類型:改變變量副本值的時候，不會改變變量本身的值(基本數據類型、陣列)
+		引用類型:改變變量副本值的時候，會改變變量本身的值(Slice、Maps)
+	*/
+
 	var userinfo2 = make(map[string]string)
 	userinfo2["username"] = "John"
 	userinfo2["age"] = "22"
@@ -67,4 +77,33 @@ func main() {
 	fmt.Println(userinfo2)
 	fmt.Println(userinfo3)
 
+	//Map的排序
+	map1 := make(map[int]int, 10)
+	map1[10] = 100
+	map1[1] = 13
+	map1[4] = 56
+	map1[8] = 98
+
+	var keySlice []int
+	for key, _ := range map1 {
+		keySlice = append(keySlice, key)
+	}
+	fmt.Println(keySlice)
+	sort.Ints(keySlice)
+	fmt.Println(keySlice)
+
+	for _, v := range keySlice {
+		fmt.Printf("key = %v, value = %v\n", v, map1[v])
+	}
+
+	//數一句話中出現幾個單字
+	var str = "How do you do how do you do"
+	var strSlice = strings.Split(str, " ") // 3個單字
+	fmt.Println(strSlice)
+
+	var strMap = make(map[string]int)
+	for _, v := range strSlice {
+		strMap[v]++
+	}
+	fmt.Println(strMap)
 }
