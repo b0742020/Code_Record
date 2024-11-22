@@ -1,4 +1,3 @@
-import matplotlib
-import numpy as np
+from math import pi
 
-print("Hello, World!")
+print(pi)
